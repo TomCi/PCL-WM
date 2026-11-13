@@ -20,7 +20,8 @@ BLOCKS = [
  "error when the model is placed inside a model predictive controller."),
 ("h2", "3.2. Latent decomposition"),
 ("p",
- "PCL-WM encodes the observation window into a latent state that is partitioned into three blocks, a canonical "
+ "We refer to the model of Section 3.1 as PCL-WM. It encodes the observation window into a latent state "
+ "partitioned into three blocks, a canonical "
  "pair and a residual vector, as in Eq. (1). The canonical pair carries the oscillatory part of the dynamics, "
  "which is the part a Hamiltonian description is meant to capture, and the residual vector carries everything "
  "else: actuation, non-conservative effects, and the part of the dynamics that is not expressible as a gradient "
