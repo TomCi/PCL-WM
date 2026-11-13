@@ -1,0 +1,30 @@
+{
+ "nrmse_25": 0.8805,
+ "drift_25": null,
+ "nrmse_50": 0.7414,
+ "drift_50": null,
+ "nrmse_100": 0.9967,
+ "drift_100": null,
+ "beta": 0.089,
+ "one_step": 0.9286,
+ "latency_ms": 1.348,
+ "domain": "D5",
+ "model": "HNN",
+ "seed": 1,
+ "epochs": 60,
+ "n_train": 205,
+ "L": 4,
+ "train_time_s": 131.2,
+ "final_loss": 7.7521,
+ "dy": 6,
+ "dx": 21,
+ "structure": {
+  "family": "HNN",
+  "latent": 0
+ },
+ "params": 34059,
+ "n_test": 16,
+ "dataset": "NASA C-MAPSS FD002, per-condition normalised (public)",
+ "subset": "FD002",
+ "condnorm": true
+}

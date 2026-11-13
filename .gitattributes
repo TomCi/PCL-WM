@@ -1,0 +1,2 @@
+# Keep every file byte-exact so MANIFEST.md checksums stay valid after clone.
+* -text

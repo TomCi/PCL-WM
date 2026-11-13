@@ -1,0 +1,29 @@
+{
+ "nrmse_25": 0.0166,
+ "drift_25": 0.81,
+ "nrmse_50": 0.0236,
+ "drift_50": 1.72,
+ "nrmse_100": 0.0675,
+ "drift_100": 9.69,
+ "nrmse_200": 0.1805,
+ "drift_200": 37.01,
+ "beta": 1.184,
+ "one_step": 0.0148,
+ "latency_ms": 0.255,
+ "domain": "D3",
+ "model": "PI-Lat",
+ "seed": 1,
+ "epochs": 60,
+ "n_train": 240,
+ "L": 4,
+ "train_time_s": 52.6,
+ "final_loss": 0.00184,
+ "dy": 8,
+ "dx": 8,
+ "structure": {
+  "family": "PI-Lat",
+  "latent": 32
+ },
+ "params": 71880,
+ "wall_s": 56.2
+}

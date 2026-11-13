@@ -1,0 +1,42 @@
+{
+ "nrmse_25": 0.6155,
+ "drift_25": 0.771,
+ "nrmse_50": 1.5786,
+ "drift_50": 0.968,
+ "nrmse_100": 8.9505,
+ "drift_100": 1.422,
+ "beta": 1.931,
+ "one_step": 0.7882,
+ "latency_ms": 2.4,
+ "domain": "D5",
+ "model": "abl-no-symplectic",
+ "seed": 1,
+ "epochs": 60,
+ "n_train": 205,
+ "L": 4,
+ "train_time_s": 245.9,
+ "final_loss": 4.27312,
+ "dy": 6,
+ "dx": 21,
+ "structure": {
+  "family": "PCL-WM",
+  "latent": 32,
+  "m": 8,
+  "r": 16,
+  "symplectic": false,
+  "gauge": true,
+  "free_dissipation": false,
+  "cert": true
+ },
+ "params": 102911,
+ "drift_beta": 0.442,
+ "n_test": 16,
+ "dataset": "NASA C-MAPSS FD002, late windows, per-condition normalised (public)",
+ "subset": "FD002",
+ "target": "ten-cycle health block, mean of five channels",
+ "references": {
+  "ramp_25": 0.523,
+  "ramp_50": 0.294,
+  "ramp_100": 0.165
+ }
+}

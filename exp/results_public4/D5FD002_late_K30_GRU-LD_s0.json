@@ -1,0 +1,36 @@
+{
+ "nrmse_25": 0.5951,
+ "drift_25": 0.666,
+ "nrmse_50": 0.6046,
+ "drift_50": 0.338,
+ "nrmse_100": 0.9091,
+ "drift_100": 0.391,
+ "beta": 0.306,
+ "one_step": 0.648,
+ "latency_ms": 0.212,
+ "domain": "D5",
+ "model": "GRU-LD",
+ "seed": 0,
+ "epochs": 60,
+ "n_train": 205,
+ "L": 4,
+ "train_time_s": 48.3,
+ "final_loss": 3.95098,
+ "dy": 6,
+ "dx": 21,
+ "structure": {
+  "family": "GRU-LD",
+  "latent": 32
+ },
+ "params": 31974,
+ "drift_beta": -0.384,
+ "n_test": 16,
+ "dataset": "NASA C-MAPSS FD002, late windows, per-condition normalised (public)",
+ "subset": "FD002",
+ "target": "ten-cycle health block, mean of five channels",
+ "references": {
+  "ramp_25": 0.523,
+  "ramp_50": 0.294,
+  "ramp_100": 0.165
+ }
+}

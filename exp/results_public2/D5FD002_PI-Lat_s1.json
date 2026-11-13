@@ -1,0 +1,29 @@
+{
+ "nrmse_25": 0.9092,
+ "drift_25": null,
+ "nrmse_50": 0.9655,
+ "drift_50": null,
+ "nrmse_100": 0.8564,
+ "drift_100": null,
+ "beta": -0.043,
+ "one_step": 1.0601,
+ "latency_ms": 0.332,
+ "domain": "D5",
+ "model": "PI-Lat",
+ "seed": 1,
+ "epochs": 60,
+ "n_train": 205,
+ "L": 4,
+ "train_time_s": 70.9,
+ "final_loss": 9.57059,
+ "dy": 6,
+ "dx": 21,
+ "structure": {
+  "family": "PI-Lat",
+  "latent": 32
+ },
+ "params": 70598,
+ "n_test": 16,
+ "dataset": "NASA C-MAPSS FD002 (public)",
+ "subset": "FD002"
+}

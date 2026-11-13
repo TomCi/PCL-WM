@@ -1,0 +1,29 @@
+{
+ "nrmse_25": 0.0126,
+ "drift_25": 0.69,
+ "nrmse_50": 0.012,
+ "drift_50": 0.96,
+ "nrmse_100": 0.0134,
+ "drift_100": 1.25,
+ "nrmse_200": 0.0126,
+ "drift_200": 1.49,
+ "beta": 0.016,
+ "one_step": 0.012,
+ "latency_ms": 1.254,
+ "domain": "D3",
+ "model": "NODE",
+ "seed": 0,
+ "epochs": 60,
+ "n_train": 240,
+ "L": 4,
+ "train_time_s": 239.0,
+ "final_loss": 0.00182,
+ "dy": 8,
+ "dx": 8,
+ "structure": {
+  "family": "NODE",
+  "latent": 0
+ },
+ "params": 38665,
+ "wall_s": 242.8
+}

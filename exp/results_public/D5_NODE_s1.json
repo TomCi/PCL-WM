@@ -1,0 +1,28 @@
+{
+ "nrmse_25": 0.7143,
+ "drift_25": null,
+ "nrmse_50": 0.7687,
+ "drift_50": null,
+ "nrmse_100": 1.0658,
+ "drift_100": null,
+ "beta": 0.289,
+ "one_step": 0.7245,
+ "latency_ms": 1.051,
+ "domain": "D5",
+ "model": "NODE",
+ "seed": 1,
+ "epochs": 60,
+ "n_train": 68,
+ "L": 4,
+ "train_time_s": 141.6,
+ "final_loss": 4.58168,
+ "dy": 6,
+ "dx": 21,
+ "structure": {
+  "family": "NODE",
+  "latent": 0
+ },
+ "params": 36999,
+ "n_test": 16,
+ "dataset": "NASA C-MAPSS FD001 (public)"
+}

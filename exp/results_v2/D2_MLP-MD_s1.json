@@ -1,0 +1,29 @@
+{
+ "nrmse_25": 0.0626,
+ "drift_25": null,
+ "nrmse_50": 0.0977,
+ "drift_50": null,
+ "nrmse_100": 0.1676,
+ "drift_100": null,
+ "nrmse_200": 0.3342,
+ "drift_200": null,
+ "beta": 0.803,
+ "one_step": 0.0178,
+ "latency_ms": 0.2,
+ "domain": "D2",
+ "model": "MLP-MD",
+ "seed": 1,
+ "epochs": 60,
+ "n_train": 240,
+ "L": 4,
+ "train_time_s": 43.1,
+ "final_loss": 0.01488,
+ "dy": 7,
+ "dx": 17,
+ "structure": {
+  "family": "MLP-MD",
+  "latent": 0
+ },
+ "params": 38151,
+ "wall_s": 51.9
+}

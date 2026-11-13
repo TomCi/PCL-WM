@@ -1,0 +1,36 @@
+{
+ "nrmse_25": 0.5808,
+ "drift_25": 0.715,
+ "nrmse_50": 0.608,
+ "drift_50": 0.685,
+ "nrmse_100": 1.5584,
+ "drift_100": 0.805,
+ "beta": 0.712,
+ "one_step": 0.6127,
+ "latency_ms": 0.245,
+ "domain": "D5",
+ "model": "MLP-MD",
+ "seed": 0,
+ "epochs": 60,
+ "n_train": 205,
+ "L": 4,
+ "train_time_s": 116.4,
+ "final_loss": 3.79545,
+ "dy": 6,
+ "dx": 21,
+ "structure": {
+  "family": "MLP-MD",
+  "latent": 0
+ },
+ "params": 37382,
+ "drift_beta": 0.086,
+ "n_test": 16,
+ "dataset": "NASA C-MAPSS FD002, late windows, per-condition normalised (public)",
+ "subset": "FD002",
+ "target": "ten-cycle health block, mean of five channels",
+ "references": {
+  "ramp_25": 0.523,
+  "ramp_50": 0.294,
+  "ramp_100": 0.165
+ }
+}

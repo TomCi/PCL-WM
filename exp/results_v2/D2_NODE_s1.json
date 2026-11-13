@@ -1,0 +1,29 @@
+{
+ "nrmse_25": 0.063,
+ "drift_25": null,
+ "nrmse_50": 0.1011,
+ "drift_50": null,
+ "nrmse_100": 0.1689,
+ "drift_100": null,
+ "nrmse_200": 0.3279,
+ "drift_200": null,
+ "beta": 0.788,
+ "one_step": 0.0179,
+ "latency_ms": 1.025,
+ "domain": "D2",
+ "model": "NODE",
+ "seed": 1,
+ "epochs": 60,
+ "n_train": 240,
+ "L": 4,
+ "train_time_s": 147.5,
+ "final_loss": 0.01493,
+ "dy": 7,
+ "dx": 17,
+ "structure": {
+  "family": "NODE",
+  "latent": 0
+ },
+ "params": 38152,
+ "wall_s": 153.2
+}

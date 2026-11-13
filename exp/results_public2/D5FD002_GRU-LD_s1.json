@@ -1,0 +1,29 @@
+{
+ "nrmse_25": 0.9085,
+ "drift_25": null,
+ "nrmse_50": 0.9595,
+ "drift_50": null,
+ "nrmse_100": 0.8476,
+ "drift_100": null,
+ "beta": -0.05,
+ "one_step": 1.0757,
+ "latency_ms": 0.198,
+ "domain": "D5",
+ "model": "GRU-LD",
+ "seed": 1,
+ "epochs": 60,
+ "n_train": 205,
+ "L": 4,
+ "train_time_s": 47.0,
+ "final_loss": 9.56001,
+ "dy": 6,
+ "dx": 21,
+ "structure": {
+  "family": "GRU-LD",
+  "latent": 32
+ },
+ "params": 31974,
+ "n_test": 16,
+ "dataset": "NASA C-MAPSS FD002 (public)",
+ "subset": "FD002"
+}

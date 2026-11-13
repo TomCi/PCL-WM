@@ -1,0 +1,36 @@
+{
+ "nrmse_25": 0.5829,
+ "drift_25": 0.727,
+ "nrmse_50": 0.629,
+ "drift_50": 0.461,
+ "nrmse_100": 0.8388,
+ "drift_100": 0.319,
+ "beta": 0.263,
+ "one_step": 0.6302,
+ "latency_ms": 0.244,
+ "domain": "D5",
+ "model": "PI-Lat",
+ "seed": 0,
+ "epochs": 60,
+ "n_train": 205,
+ "L": 4,
+ "train_time_s": 51.2,
+ "final_loss": 3.89707,
+ "dy": 6,
+ "dx": 21,
+ "structure": {
+  "family": "PI-Lat",
+  "latent": 32
+ },
+ "params": 70598,
+ "drift_beta": -0.594,
+ "n_test": 16,
+ "dataset": "NASA C-MAPSS FD002, late windows, per-condition normalised (public)",
+ "subset": "FD002",
+ "target": "ten-cycle health block, mean of five channels",
+ "references": {
+  "ramp_25": 0.523,
+  "ramp_50": 0.294,
+  "ramp_100": 0.165
+ }
+}

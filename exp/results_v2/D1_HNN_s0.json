@@ -1,0 +1,29 @@
+{
+ "nrmse_25": 0.1814,
+ "drift_25": null,
+ "nrmse_50": 0.3572,
+ "drift_50": null,
+ "nrmse_100": 0.7063,
+ "drift_100": null,
+ "nrmse_200": 1.7338,
+ "drift_200": null,
+ "beta": 1.075,
+ "one_step": 0.0169,
+ "latency_ms": 1.426,
+ "domain": "D1",
+ "model": "HNN",
+ "seed": 0,
+ "epochs": 60,
+ "n_train": 240,
+ "L": 4,
+ "train_time_s": 144.3,
+ "final_loss": 0.33714,
+ "dy": 6,
+ "dx": 12,
+ "structure": {
+  "family": "HNN",
+  "latent": 0
+ },
+ "params": 34059,
+ "wall_s": 147.8
+}

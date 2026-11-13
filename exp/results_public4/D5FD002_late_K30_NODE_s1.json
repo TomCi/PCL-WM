@@ -1,0 +1,36 @@
+{
+ "nrmse_25": 0.5785,
+ "drift_25": 0.78,
+ "nrmse_50": 0.63,
+ "drift_50": 0.63,
+ "nrmse_100": 0.949,
+ "drift_100": 0.435,
+ "beta": 0.357,
+ "one_step": 0.6235,
+ "latency_ms": 0.984,
+ "domain": "D5",
+ "model": "NODE",
+ "seed": 1,
+ "epochs": 60,
+ "n_train": 205,
+ "L": 4,
+ "train_time_s": 138.9,
+ "final_loss": 3.82071,
+ "dy": 6,
+ "dx": 21,
+ "structure": {
+  "family": "NODE",
+  "latent": 0
+ },
+ "params": 37383,
+ "drift_beta": -0.421,
+ "n_test": 16,
+ "dataset": "NASA C-MAPSS FD002, late windows, per-condition normalised (public)",
+ "subset": "FD002",
+ "target": "ten-cycle health block, mean of five channels",
+ "references": {
+  "ramp_25": 0.523,
+  "ramp_50": 0.294,
+  "ramp_100": 0.165
+ }
+}

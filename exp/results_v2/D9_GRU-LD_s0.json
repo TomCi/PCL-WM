@@ -1,0 +1,29 @@
+{
+ "nrmse_25": 0.1772,
+ "drift_25": null,
+ "nrmse_50": 0.2871,
+ "drift_50": null,
+ "nrmse_100": 0.3919,
+ "drift_100": null,
+ "nrmse_200": 0.4242,
+ "drift_200": null,
+ "beta": 0.423,
+ "one_step": 0.0202,
+ "latency_ms": 0.192,
+ "domain": "D9",
+ "model": "GRU-LD",
+ "seed": 0,
+ "epochs": 60,
+ "n_train": 240,
+ "L": 4,
+ "train_time_s": 44.3,
+ "final_loss": 0.0325,
+ "dy": 24,
+ "dx": 72,
+ "structure": {
+  "family": "GRU-LD",
+  "latent": 32
+ },
+ "params": 35928,
+ "wall_s": 51.9
+}

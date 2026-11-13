@@ -1,0 +1,29 @@
+{
+ "nrmse_25": 0.8975,
+ "drift_25": null,
+ "nrmse_50": 0.9599,
+ "drift_50": null,
+ "nrmse_100": 0.8436,
+ "drift_100": null,
+ "beta": -0.045,
+ "one_step": 1.0581,
+ "latency_ms": 0.192,
+ "domain": "D5",
+ "model": "MLP-MD",
+ "seed": 1,
+ "epochs": 60,
+ "n_train": 205,
+ "L": 4,
+ "train_time_s": 33.5,
+ "final_loss": 9.55756,
+ "dy": 6,
+ "dx": 21,
+ "structure": {
+  "family": "MLP-MD",
+  "latent": 0
+ },
+ "params": 37382,
+ "n_test": 16,
+ "dataset": "NASA C-MAPSS FD002 (public)",
+ "subset": "FD002"
+}
