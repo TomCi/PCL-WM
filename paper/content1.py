@@ -3,11 +3,11 @@
 
 BLOCKS = [
 ("h1", "Highlights"),
-("bullet", "Physics priors are evaluated component by component in a latent world model for engineering control."),
-("bullet", "Hard symplectic integration degrades long-horizon accuracy by a factor of 2.3 in learned latent spaces."),
-("bullet", "Port-Hamiltonian dissipation with positive-semidefinite R=LLT is the component that generalises."),
-("bullet", "With 60 trajectories and shifted initial states, the structured model is about 15% more accurate."),
-("bullet", "Closed-loop MPC does not separate the models: feedback absorbs model error that rollout exposes."),
+("bullet", "Physics priors are scored component by component in a latent world model."),
+("bullet", "Hard symplectic steps cut long-horizon accuracy by 2.3x in latent space."),
+("bullet", "Port-Hamiltonian dissipation with PSD R=LLT is the prior that transfers."),
+("bullet", "With 60 trajectories the structured model is about 15% more accurate."),
+("bullet", "Closed-loop MPC hides model error that open-loop rollout exposes."),
 
 ("h1", "Abstract"),
 ("p",
@@ -16,7 +16,7 @@ BLOCKS = [
  "that map, most commonly a Hamiltonian split with a symplectic integrator, and the literature usually reports "
  "them as uniformly better. This paper separates the design decisions such a model bundles into one architecture "
  "and measures each of them under partial observability, over hundreds of steps, and with a limited budget of "
- "trajectories. We study PCL-WM, a latent world model whose state is split into a canonical pair (q,p) advanced "
+ "trajectories. We study a latent world model whose state is split into a canonical pair (q,p) advanced "
  "by a learned Hamiltonian through a Störmer-Verlet map and a residual block that follows discrete "
  "port-Hamiltonian dynamics with a positive-semidefinite dissipation matrix, together with a gauge-fixing term "
  "and an error-decomposition certificate that can be evaluated online. The model is compared with five families "
