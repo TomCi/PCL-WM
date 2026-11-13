@@ -11,41 +11,7 @@ BLOCKS = [
 
 ("h1", "Abstract"),
 ("p",
- "World models that roll out in a learned latent space are attractive for engineering control because they "
- "replace an expensive simulator with a cheap differentiable map. Physics-informed variants add structure to "
- "that map, most commonly a Hamiltonian split with a symplectic integrator, and the literature usually reports "
- "them as uniformly better. This paper separates the design decisions such a model bundles into one architecture "
- "and measures each of them under partial observability, over hundreds of steps, and with a limited budget of "
- "trajectories. We study a latent world model whose state is split into a canonical pair (q,p) advanced "
- "by a learned Hamiltonian through a Störmer-Verlet map and a residual block that follows discrete "
- "port-Hamiltonian dynamics with a positive-semidefinite dissipation matrix, together with a gauge-fixing term "
- "and an error-decomposition certificate that can be evaluated online. The model is compared with five families "
- "of baselines on four self-contained engineering domains: a fin-stabilised projectile, a quadrotor, a thermal "
- "network, and a reaction-diffusion field, all observed through a reduced sensor set and driven by a four-step "
- "history window, and on a measured domain, the NASA C-MAPSS FD001 turbofan fleet. Sixty-three trained configurations give a conditional rather than a uniform picture. The "
- "Verlet map costs a factor of 2.3 in 200-step error on the projectile, where the canonical split is closest to "
- "the physics: 0.793 against 0.343, with the error-growth exponent falling from 1.33 to 0.96. On the quadrotor the "
- "same removal buys only 1.37 times, on the thermal network 1.09 times, and on the reaction-diffusion field it "
- "costs 2.6 times, because the implicit stage of the map damps stiff latent modes that a removed map exposes. "
- "The integrator is therefore a spectrum-matching decision rather than a doctrine, and the residual gap on the "
- "three non-mechanical plants belongs to the canonical split, not to the integrator. What survives across plants "
- "is the port-Hamiltonian residual block with constrained dissipation and the gauge condition, and it pays off "
- "only out of distribution: with sixty training trajectories and initial speeds shifted outside the training "
- "range, the structured configuration reaches 0.595 against 0.704 for an unstructured latent model and 0.744 for "
- "a direct multi-layer predictor, roughly a 16% reduction on two seeds, at the cost of nine percent in "
- "distribution. Closed-loop model "
- "predictive control with a cross-entropy planner does not separate them: over three controller runs and "
- "twenty-four episodes per configuration the closed-loop error of all five models falls between 0.065 and "
- "0.074, a spread smaller than the run-to-run variation of a single configuration. On the measured fleet the ranking changes once "
- "more: every model beats the last-value predictor, error growth saturates at the noise floor with an exponent "
- "near zero, the direct predictor is the most accurate, and the symplectic map is what keeps the latent rollout "
- "bounded, 0.971 against 14.484 at a hundred cycles when it is removed, with every seed diverging once the "
- "map is gone. A pair of state estimators running the "
- "true plant equations is reported as an upper reference; it is more accurate than every learned model on three "
- "of the four simulated plants, by factors of two to two orders of magnitude, which fixes how much of the gap "
- "latent world models have actually closed. We conclude that structure in a latent world "
- "model should be treated as a set of separable design decisions with separable evidence, and we state which of "
- "them survive contact with data, on which plants, and at what cost."),
+ "Latent world models replace an expensive simulator with a differentiable map, and physics-informed variants are usually reported as uniformly better. This paper asks which of those priors actually help, as separable design decisions. The model studied splits a latent state into a canonical pair advanced by a learned Hamiltonian through a Störmer-Verlet map and a residual block following discrete port-Hamiltonian dynamics with a positive-semidefinite dissipation matrix, plus a gauge condition and an online error certificate. Sixty-three trained configurations on a projectile, a quadrotor, a thermal network, a reaction-diffusion field and the measured C-MAPSS fleet, under partial observability, give a conditional picture. On the projectile the Verlet map costs 2.3 times in 200-step error, 0.793 against 0.343, growth exponent 1.33 to 0.96; on the quadrotor the same removal buys 1.37 times, on the thermal network 1.09, and on the reaction-diffusion field it costs 2.6 times, because the implicit stage damps stiff latent modes. The integrator is a spectrum-matching decision. What survives is the port-Hamiltonian residual with constrained dissipation and the gauge condition, and only out of distribution: 0.595 against 0.704 and 0.744 with sixty trajectories and initial speeds shifted outside the training range, about 16% better at 9% cost in distribution. Closed-loop control separates none of them, 0.065 to 0.074. On the measured fleet true-equation estimators stay two to a hundred times more accurate, fixing how much of that gap has closed. The AI contribution is the component-wise attribution; the engineering one, a costed account of which priors to keep."),
 
 ("p", "Keywords: world models; latent dynamics; port-Hamiltonian systems; symplectic integration; "
       "model predictive control; partial observability; engineering applications"),
